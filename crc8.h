@@ -1,5 +1,5 @@
-#ifndef MKCRC8_H
-#define MKCRC8_H
+#ifndef CRC8_H
+#define CRC8_H
 
 void populate(uint8_t * table, uint8_t generator=0x9BU) {
     const uint16_t gen = generator << 4U;
@@ -23,4 +23,4 @@ uint8_t crc8(uint8_t * table, uint8_t * data, unsigned int datalen, uint8_t chec
     return crc;
 }
 
-#endif //AUX_MKCRC_H
+#endif //CRC_H
